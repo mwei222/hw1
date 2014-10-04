@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  #get '/about', to: 'CONTROLLER#FUNCTION'
-  #get '/user/new', to: 'CONTROLLER#FUNCTION', as: 'users'
-
+ 
+  get '/user/new', to: 'users#new', as: 'users'  
+  get '/about', to: 'static_pages#about'
+  root 'users#index'
 
 
   #Edit above this line
